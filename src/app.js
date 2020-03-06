@@ -16,6 +16,19 @@ app.get('', (req, res) => {
     })
 })
 
+app.get('/about', (req, res) => {
+    res.render('about', {
+        title: 'About me',
+        name: 'Conrad Casper'
+    })
+})
+
+app.get('/help', (req, res) => {
+    res.render('help', {
+        message: 'Help page'
+    })
+})
+
 app.get('/weather', (req, res) => {
     res.send({
         forecast: 'Rainy',
