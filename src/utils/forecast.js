@@ -14,7 +14,7 @@ const forecast = (latitude, longitude, callback) => {
             const low = body.daily.data[0].temperatureLow
             const { temperature:temp, precipProbability:prob } = body.currently
 
-            const message = `${daily} It is currently ${temp} degrees outside. There is a ${prob}% chance of rain. The high for today will be ${high} degrees and the low will be ${low} degrees.`
+            const message = `${daily} It is currently ${temp} degrees outside. There is a ${prob}% chance of rain. The high for today will be ${high} degrees and the low will be ${low} degrees. Have a great day!`
             callback(undefined, message)
             
         }
